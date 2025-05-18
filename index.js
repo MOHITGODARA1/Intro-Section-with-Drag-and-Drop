@@ -59,16 +59,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const phonesection=document.querySelector(".allphonemenu");
   const closemenu=document.querySelector(".closemenu");
   const feature=document.querySelector(".phonefeature");
-  const feature1=document.querySelector(".phonefeature1");
-  feature.addEventListener("click",()=>{
-    document.querySelector(".featureoption").style.display="block";
-  })
-  feature1.addEventListener("click",()=>{
-    document.querySelector(".featureoption1").style.display="block";
-  })
+  const arrowup=document.querySelector(".phonearrowdown");
+  
+  
+  const feature1 = document.querySelector(".featuresection1 > .phonefeature1");
+const featureOption1 = document.querySelector(".featureoption1");
+const arrowIcon = feature1.querySelector(".phonearrowdown");
+
+feature1.addEventListener("click", () => {
+  const isVisible = featureOption1.style.display === "block";
+  
+  featureOption1.style.display = isVisible ? "none" : "block";
+  arrowIcon.src = isVisible ? "icon-arrow-down.svg" : "icon-arrow-up.svg";
+});
+
+
+
+
+
+feature.addEventListener("click",()=>{
+  
+    const option=document.querySelector(".featureoption");
+    const isvisibal=option.style.display==="block";
+    option.style.display=isvisibal?"none":"block";
+    arrowup.src=isvisibal?"icon-arrow-down.svg":"icon-arrow-up.svg";
+    
+  });
+  
+  
+  const bulereffect = document.querySelector(".left");
   menuimage.addEventListener("click",()=>{
     phonesection.style.display="block";
-    document.querySelector(".left").style.display="block";
+    bulereffect.style.display="block";
   });
   closemenu.addEventListener("click",()=>{
     phonesection.style.display="none";

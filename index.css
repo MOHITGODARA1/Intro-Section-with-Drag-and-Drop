@@ -307,6 +307,7 @@
 }
 .left{
    width: 39%;
+   height: 100%;
    background-color: #000000b3;
    display: none;
 }
@@ -323,14 +324,23 @@
    justify-content: center;
    margin-top: 12px;
 }
+.featuresection1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 12px;
+}
 .featureoption{
    width: 100%;
-   height: 200px;
+   height: 149px;
    display: flex;
    justify-content: center;
    flex-direction: column;
    display: none;
 }
+
+
 .featureoption1{
    width: 100%;
    height: 150px;
@@ -339,6 +349,9 @@
    flex-direction: column;
    display: none;
 }
+
+
+
 .phonearrowdown{
    margin-top: 10px;
    margin-left: 4px;
@@ -349,10 +362,6 @@
 }
 .phoneCareer{
    font-size: 27px;
-}
-.phonefeature1{
-   font-size: 26px;
-   padding-top: 27px;
 }
 .phologin{
    margin-top: 27px;
@@ -392,6 +401,8 @@
    display: flex;
     height: 33%;
     align-items: center;
+    font-size: 26px;
+   padding-top: 17px;
 }
 .closemenu{
    margin-right: 17px;
@@ -466,7 +477,7 @@
    height: 155px;
    align-items: center;
    justify-content: center;
-   gap: 37px;
+   gap: 57px;
 }
 .heading {
     font-size: 78px;
