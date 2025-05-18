@@ -1,0 +1,493 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root{
+   --primery--colour:white;
+   --secondry--colour:rgb(0, 0, 0);
+   --text--colour:rgb(33, 32, 32);
+}
+.navbarsection{
+   width: 100%;;
+   height: 80px;
+   display: flex;
+}
+
+
+
+/* logo-section-name */
+.name{
+   width: 20%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo-section{
+   font-family: "Roboto Condensed", sans-serif;
+   font-weight: 700;
+}
+
+/* nav-element-section */
+.nav-element{
+   width: 80%;
+   height: 100%;
+   display: flex;
+}
+.left-section-navbar{
+   height: 100%;
+   width: 43%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.navbarsection{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.left-navbar{
+   display: flex;
+   gap: 60px;
+}
+.feature{
+   list-style: none;
+}
+.nav-bar-link{
+   text-decoration: none;
+   color: black;
+}
+.scrooldown{
+   position: absolute;
+   background-color: rgba(205, 197, 197, 0.216);
+   margin-top: 50px;
+   border-radius: 10px;
+   width: 150px;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   display: none;
+}
+.scrooldown1{
+   position: absolute;
+   background-color: rgba(205, 197, 197, 0.216);
+   margin-top: 50px;
+   border-radius: 10px;
+   margin-left: 153px;
+   width: 129px;
+    height: 112px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   display: none;
+}
+.text2{
+   font-size: 15px;
+   cursor: pointer;
+}
+.firstelement1{
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.firstelement{
+   width: 100%;
+   height: 20%;
+   display: flex;
+   align-items: center;
+}
+.image{
+   height: 15px;
+   margin-left: 17px;
+   width: 15px;
+}
+.text{
+   margin-left: 9px;
+   font-size: 15px;
+   cursor: pointer;
+}
+/* login and registerbutton */
+.right-section-navbar{
+   height: 100%;
+   width: 57%;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   gap: 40px;
+}
+.login1{
+   height: 40px;
+   width: 90px;
+   background-color: var(--primery--colour);
+   border: 1px solid black;
+   border-radius: 10px;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+}
+.login1::before{
+   content: "";
+   position: absolute;
+   background-color: black;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   left: -100%;
+   z-index: -1;
+   color: var(--primery--colour);
+}
+.login1:hover{
+   color: var(--primery--colour);
+}
+.login:hover{
+   color: var(--primery--colour);
+}
+.login1:hover:before{
+   animation: slide-bg 0.4s forwards;
+}
+.login {
+   height: 40px;
+   width: 90px;
+   margin-right: 40px;
+   background-color: var(--primery--colour);
+   border: 1px solid black;
+   border-radius: 10px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+   transition: all 0.4s ease-in; 
+}
+
+.login::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -100%;
+   height: 100%;
+   width: 100%;
+   background-color: black; 
+   z-index: -1;
+   color: var(--primery--colour);
+}
+
+.login:hover::before {
+   animation: slide-bg 0.4s forwards;
+}
+
+
+
+/* afternavbar */
+
+.mainpage{
+   height: 89vh;
+   width: 100%;
+   display: flex;
+}
+/* mainleft section */
+.left-main-section{
+   height: 100%;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.leftcontentsection{
+   height: 90%;
+   width: 80%;
+}
+.heading{
+   font-size: 122px;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 96px;
+    font-weight: 500;
+}
+.content{
+   padding-top: 70px;
+   padding-left: 30px;
+   padding-right: 60px;
+}
+.learn{
+   height: 40px;
+   width: 115px;
+   border-radius: 10px;
+   border: 0;
+   cursor: pointer;
+   background-color:rgb(21, 20, 20);
+   color: var(--primery--colour);
+   margin-top: 35px;
+   margin-left: 30px;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+}
+.learn::before{
+   content: "";
+   position: absolute;
+   height: 100%;
+   z-index: -1;
+   width: 100%;
+   top: 0;
+   left: -100%;
+   background-color: rgb(223, 227, 230);
+}
+.learn:hover::before{
+   animation: slide-bg 0.4s forwards;
+}
+.learn:hover{
+   color: black;
+}
+.image-section{
+   display: flex;
+   height: 200px;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+}
+.imagesection{
+   height: 50px;
+   width: 85px;
+}
+
+/* mainright section */
+.right-main-section{
+   height: 100%;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.mainimage{
+   height: 100%;
+   width: 80%;
+   display: block;
+}
+.mainimage1{
+   height: 100%;
+   width: 80%;
+   display: none;
+}
+.menuimage{
+   height: 40%;
+   width: 40px;
+   display: none;
+   position: relative;
+}
+
+/* phonediv */
+.menuphone {
+    height: 100vh;
+    width: 61%;
+    position: absolute;
+    background-color: antiquewhite;
+    display: none;
+    top: 0;
+    left: 150px;
+    
+    /* z-index: 1; */
+}
+.allphonemenu{
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   display: flex;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+.left{
+   width: 39%;
+   background-color: #000000b3;
+   display: none;
+}
+.crosssection{
+   width: 100%;
+   display: flex;
+   justify-content: end;
+   
+}
+.featuresection{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 12px;
+}
+.featureoption{
+   width: 100%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   display: none;
+}
+.featureoption1{
+   width: 100%;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   display: none;
+}
+.phonearrowdown{
+   margin-top: 10px;
+   margin-left: 4px;
+}
+.phonefeature{
+   font-size: 26px;
+   padding-top: 31px;
+}
+.phoneCareer{
+   font-size: 27px;
+}
+.phonefeature1{
+   font-size: 26px;
+   padding-top: 17px;
+}
+.phologin{
+   margin-top: 27px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.phonelogin{
+   height: 40px;
+   width: 80%;
+   background-color: var(--primery--colour);
+   border: 1px solid black;
+   border-radius: 10px;
+}
+.careers{
+   display: flex;
+   margin-left: 65px;
+   align-items: end;
+   margin-top: 20px;
+   height: 40px;
+}
+.phonefeatureimage{
+   height: 18px;
+    width: 20px;
+   margin-left: 61px;
+}
+.phonetext{
+   margin-left: 10px;
+   font-size: 18px;
+}
+.phonetext1{
+   margin-left: 31%;
+   font-size: 18px;
+}
+.phonefeature1{
+   display: flex;
+    height: 33%;
+    align-items: center;
+}
+.closemenu{
+   margin-right: 17px;
+   margin-top: 15px;
+   
+}
+@keyframes slide-bg {
+   from {
+      left: -100%;
+   }
+   to {
+      left: 0%;
+   }
+}
+@media(min-width:350px)and (max-width:450px){
+   .left-section-navbar{
+      display: none;
+   }
+   .right-section-navbar{
+      display: none;
+}
+.mainpage{
+   flex-direction: column-reverse;
+   height: 100vh;
+}
+.left-main-section{
+   height: 64%;
+   width: 100%;
+   
+}
+.mainimage{
+   display: none;
+}
+.mainimage1{
+   display: block;
+   height: 80%;
+   width: 90%;
+   
+}
+.right-main-section{
+   height: 36%;
+   width: 100%;
+}
+.leftcontentsection {
+    height: 90%;
+    width: 100%;
+}
+.content {
+    padding-top: 43px;
+    padding-left: 11px;
+    padding-right: 60px;
+}
+.learn {
+    height: 40px;
+    width: 115px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(21, 20, 20);
+    color: var(--primery--colour);
+    margin-top: 35px;
+    margin-left: 12px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.image-section{
+   display: flex;
+   height: 155px;
+   align-items: center;
+   justify-content: center;
+   gap: 37px;
+}
+.heading {
+    font-size: 78px;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 66px;
+    font-weight: 500;
+}
+.name {
+    width: 40%;
+}
+.nav-element {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.imagesection {
+    height: 43px;
+    width: 60px;
+}
+.menuimage{
+   display: block;
+   margin-right: 25px;
+}
+.menuphone{
+   display: block;
+}
+}
