@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const hoveritem2 = document.querySelector("#hoveritem2");
   const scrooldown = document.querySelector(".scrooldown");
   const scrooldown1 = document.querySelector(".scrooldown1");
-   const arrowimage=document.querySelector(".lowerarrow");
-   const arrowimage2=document.querySelector(".lowerarrow2");
+  const arrowimage=document.querySelector(".lowerarrow");
+  const arrowimage2=document.querySelector(".lowerarrow2");
   if (hoveritem && scrooldown) {
     hoveritem.addEventListener("mouseover", () => {
       scrooldown.style.display = "block";
@@ -54,4 +54,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   }
+
+  const menuimage=document.querySelector(".menuimage");
+  const phonesection=document.querySelector(".allphonemenu");
+  const closemenu=document.querySelector(".closemenu");
+  const feature=document.querySelector(".phonefeature");
+  const feature1=document.querySelector(".phonefeature1");
+  feature.addEventListener("click",()=>{
+    document.querySelector(".featureoption").style.display="block";
+  })
+  feature1.addEventListener("click",()=>{
+    document.querySelector(".featureoption1").style.display="block";
+  })
+  menuimage.addEventListener("click",()=>{
+    phonesection.style.display="block";
+  });
+  closemenu.addEventListener("click",()=>{
+    phonesection.style.display="none";
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

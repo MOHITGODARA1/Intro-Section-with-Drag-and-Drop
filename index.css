@@ -288,7 +288,7 @@
     height: 100vh;
     width: 61%;
     position: absolute;
-    background-color: antiquewhite;
+    background-color: var(--primery--colour);
     display: none;
     top: 0;
     left: 150px;
@@ -303,6 +303,7 @@
    top: 0;
    left: 0;
    right: 0;
+   display: none;
 }
 .left{
    width: 39%;
@@ -420,6 +421,9 @@
    height: 45%;
    width: 100%;
    
+}
+.left{
+   display: block;
 }
 .mainimage{
    display: none;
