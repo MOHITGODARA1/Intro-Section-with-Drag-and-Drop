@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   menuimage.addEventListener("click",()=>{
     phonesection.style.display="block";
+    document.querySelector(".left").style.display="block";
   });
   closemenu.addEventListener("click",()=>{
     phonesection.style.display="none";

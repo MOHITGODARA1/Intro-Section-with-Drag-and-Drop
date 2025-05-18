@@ -352,7 +352,7 @@
 }
 .phonefeature1{
    font-size: 26px;
-   padding-top: 17px;
+   padding-top: 27px;
 }
 .phologin{
    margin-top: 27px;
@@ -422,9 +422,9 @@
    width: 100%;
    
 }
-.left{
+/* .left{
    display: block;
-}
+} */
 .mainimage{
    display: none;
 }
